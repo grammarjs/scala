@@ -1,5 +1,18 @@
 
 #
+# Default target.
+#
+
+default: test
+
+#
+# Clean.
+#
+
+clean:
+	@-rm -rf node_modules npm-debug.log
+
+#
 # Test.
 #
 

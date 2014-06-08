@@ -4,6 +4,7 @@
   "main": "./index.js",
   "dependencies": {
     "grammarjs-grammar": "*",
+    "syntaxjs-punctuation": "*",
     "syntaxjs-token": "*"
   },
   "devDependencies": {

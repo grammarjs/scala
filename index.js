@@ -11,23 +11,38 @@ var value = Token.value;
 var passthrough = Token.passthrough;
 
 /**
- * Start
+ * Start.
  */
 
 rule('scala')
   .match(':statement*', passthrough);
 
 rule('statement')
-  .match(':package', passthrough);
+  .match(':package', passthrough)
+  .match(':class', passthrough);
 
 rule('package')
   .match(
     ':keyword.package',
     ':punctuation.space',
     ':path',
+    ':punctuation.whitespace',
     passthrough);
 
-rule('path');
+rule('path')
+  .match(':path.start', ':path.end*', passthrough);
+
+rule('path.start')
+  .match(':identifier', passthrough);
+
+rule('path.end')
+  .match(':punctuation.period', ':identifier', passthrough);
+
+// final case class Name(kind: Int, parent: Option[Context] = None)
+
+rule('class');
+
+rule('class.body');
 
 /**
  * Keywords.
