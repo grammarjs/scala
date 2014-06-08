@@ -6,7 +6,6 @@ var parser = new Parser(grammar);
 var transform = require('./index');
 
 describe('scala', function(){
-  it('parse', function(){
-    
-  });
+  test('private[parser]');
+  test('private[this]');
 });
