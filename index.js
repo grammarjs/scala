@@ -236,6 +236,19 @@ rule('identifier')
     passthrough);
 
 /**
+ * Literal.
+ */
+
+rule('literal')
+  .match(':punctuation.dash', ':literal.integer', passthrough)
+  .match(':punctuation.dash', ':literal.float', passthrough)
+  .match(':literal.boolean', passthrough)
+  .match(':literal.character', passthrough)
+  .match(':literal.string', passthrough)
+  .match(':literal.symbol', passthrough)
+  .match(':literal.null', passthrough);
+
+/**
  * Keywords.
  */
 
