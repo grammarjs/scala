@@ -4,12 +4,17 @@
  */
 
 var Grammar = require('grammarjs-grammar');
-var Token = require('languagejs-token');
-var punctuation = require('syntaxjs-punctuation');
+var Token = require('grammarjs-token');
+var punctuation = require('grammarjs-punctuation');
 var grammar = new Grammar('scala');
-var rule = grammar.expression; // grammar.rule;
+var rule = grammar.expression;
 var value = Token.value;
 var passthrough = Token.passthrough;
+
+/**
+ * Use plugins.
+ */
+
 grammar.use(punctuation());
 
 /**

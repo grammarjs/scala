@@ -1,20 +1,20 @@
 
-# syntaxjs-scala
+# grammarjs-scala
 
-Language grammar for scala.
+Scala Language Grammar.
 
 ## Installation
 
 node.js:
 
 ```
-$ npm install syntaxjs-scala
+$ npm install grammarjs-scala
 ```
 
 browser:
 
 ```
-$ component install syntaxjs/scala
+$ component install syntaxjs/grammarjs
 ```
 
 ## Licence

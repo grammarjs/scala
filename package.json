@@ -1,11 +1,11 @@
 {
-  "name": "syntaxjs-scala",
+  "name": "grammarjs-scala",
   "version": "0.0.1",
   "main": "./index.js",
   "dependencies": {
     "grammarjs-grammar": "*",
-    "syntaxjs-punctuation": "*",
-    "syntaxjs-token": "*"
+    "grammarjs-punctuation": "*",
+    "grammarjs-token": "*"
   },
   "devDependencies": {
     "grammarjs-recursive-parser": "*"
