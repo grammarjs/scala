@@ -14,7 +14,7 @@ $ npm install grammarjs-scala
 browser:
 
 ```
-$ component install syntaxjs/grammarjs
+$ component install grammarjs/scala
 ```
 
 ## Licence
